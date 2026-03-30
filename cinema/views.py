@@ -3,7 +3,12 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.request import Request
 from rest_framework import viewsets
 
-from cinema.models import Genre, Actor, CinemaHall, Movie, MovieSession, Order
+from cinema.models import (Genre,
+                           Actor,
+                           CinemaHall,
+                           Movie,
+                           MovieSession,
+                           Order)
 
 from cinema.serializers import (
     GenreSerializer,
@@ -14,7 +19,9 @@ from cinema.serializers import (
     MovieSessionListSerializer,
     MovieDetailSerializer,
     MovieSessionDetailSerializer,
-    MovieListSerializer, OrderSerializer, TicketCreateSerializer, OrderCreateSerializer,
+    MovieListSerializer,
+    OrderSerializer,
+    OrderCreateSerializer,
 )
 
 
